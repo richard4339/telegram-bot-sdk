@@ -365,6 +365,36 @@ class Api
     }
 
     /**
+     * Send Animations.
+     *
+     * <code>
+     * $params = [
+     *   'chat_id'             => '',
+     *   'animation'               => '',
+     *   'caption'             => '',
+     *   'reply_to_message_id' => '',
+     *   'reply_markup'        => '',
+     * ];
+     * </code>
+     *
+     * @link https://core.telegram.org/bots/api#sendanimation
+     *
+     * @param array    $params
+     *
+     * @var int|string $params ['chat_id']
+     * @var string     $params ['animation']
+     * @var string     $params ['caption']
+     * @var int        $params ['reply_to_message_id']
+     * @var string     $params ['reply_markup']
+     *
+     * @return Message
+     */
+    public function sendAnimation(array $params)
+    {
+        return $this->uploadFile('sendAnimation', $params);
+    }
+
+    /**
      * Send regular audio files.
      *
      * <code>
