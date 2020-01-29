@@ -19,6 +19,7 @@ use Illuminate\Support\Str;
  * @method mixed replyWithSticker($use_sendSticker_parameters)       Reply Chat with a Sticker. You can use all the sendSticker() parameters except chat_id.
  * @method mixed replyWithLocation($use_sendLocation_parameters)     Reply Chat with a Location. You can use all the sendLocation() parameters except chat_id.
  * @method mixed replyWithChatAction($use_sendChatAction_parameters) Reply Chat with a Chat Action. You can use all the sendChatAction() parameters except chat_id.
+ * @method mixed replyWithAnimation($use_sendAnimation_parameters)   Reply Chat with an Animation. You can use all the sendAnimation() parameters except chat_id.
  */
 abstract class Command implements CommandInterface
 {
