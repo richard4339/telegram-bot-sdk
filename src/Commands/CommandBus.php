@@ -19,7 +19,7 @@ class CommandBus
     /**
      * @var Api
      */
-    private $telegram;
+    protected $telegram;
 
     /**
      * Instantiate Command Bus.
